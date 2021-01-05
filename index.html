@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+  <!-- Modal -->
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">DISCLAIMER</h5>
+            </div>
+            <div class="modal-body">
+                <h6>This website has been designed only for the purposes of dissemination of basic information on CapturLAW; information which 
+                  is otherwise available on the internet, various public platforms and social media. Careful attention has been given to ensure 
+                  that the information provided herein is accurate and up-to-date. However, CapturLAW is not responsible for any reliance that a
+                  reader places on such information and shall not be liable for any loss or damage caused due to any inaccuracy in or exclusion
+                  of any information, or its interpretation thereof. Reader is advised to confirm the veracity of the same from independent and 
+                  expert sources. </h6>
+                  <h6>
+                  This website is not an attempt to advertise or solicit clients, and does not seek to create or invite any lawyer-client relationship.
+                  The links provided on this website are to facilitate access to basic information on CapturLAW, and, to share the various thought
+                  leadership initiatives undertaken by it. The content herein or on such links should not be construed as a legal reference or legal 
+                  advice. Readers are advised not to act on any information contained herein or on the links and should refer to legal counsels and 
+                  experts in their respective jurisdictions for further information and to determine its impact. </h6>
+                  <h6>
+                  CapturLAW advises against the use of the communication platform provided on this website for exchange of any confidential, business
+                  or politically sensitive information. User is requested to use his or her judgment and exchange of any such information shall be 
+                  solely at the user’s risk.</h6>
+                  <h6>
+                  CapturLAW uses cookies on its website to improve its usability. This helps us in providing a good user experience and to also help
+                  in improving our website. By continuing to use our website without changing your privacy settings, you agree to use our cookies.
+                </h6>
+                <form style="font-size: 16px;">
+                  <hr>
+                  <div class="form-check">
+                    <input type="checkbox"  id="CookieCheckBox" onclick="myFunction()">
+                    <label  for="CookieCheckBox">I accept the above.</label>
+                  </div>
+                
+                  <button class="btn info" id="ProceedCookieBtn" data-dismiss="modal" style="margin-left: 10px;border-radius: 0ch;display: none;">PROCEED TO WEBSITE </button>
+                </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <!-- NaviGation_Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-fixed-top  ">
+    <a class="navbar-brand" href="index.html">
+      <img  class="MyImage"  alt="" style="height:100px;">
+    </a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <div class="btn-toggler"  >
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <!-- Main-Heading -->
+
+    <div class="text HiddenContent" style="display: none;"> 
+      <h1 id="text-h1">COMING SOON</h1>
+      <h2 id="text-h2">Driven by Law. Powered by Technology.</h2>
+      <h3 id="text-h3">CapturLAW provides premium online legal documentation and tax filing services to individuals and businesses.</h3>
+      <div id="box2" class="tbox">
+      </div>
+    </div>
+    <section class="services HiddenContent" style="display: none;">
+      <h1>Services</h1>
+        
+      <div class="content">
+          <div class="servicesBx">
+            <img src="images\icons\drafting.png" alt="">
+            <h2><br>Drafting</h2>
+          </div>
+            <div class="servicesBx">
+              <img src="images\icons\notarization.png" alt="">
+              <h2><br>Notarization</h2>
+            </div>
+            <div class="servicesBx">
+              <img src="images\icons\taxfiling.png" alt="">
+              <h2><br>Tax Filing</h2>
+            </div>
+              <div class="servicesBx">
+                <a style="text-decoration:none"  href="pages/Consultation.html">
+                  <img src="images\icons\consultation.png" alt="">
+                <h2><br>Consultation</h2>
+              </a>
+            </div>
+        
+      </div>
+    
+    </section>
+
+  
+
+  <!-- Main Heading -->
+
+  <div class="container HiddenContent" style="display: none;">
+    <h1>Our Team</h1>
+    <div  class="row">
+      <div  class="col-sm-4" >
+        <img class="ProfileImgLight" src="images\photos\anupammandal.jpg" alt="">
+        <img class="ProfileImgDark" src="images\photos\anupammandal_bw.jpeg" alt="">
+        <h2 >Anupam Mandal</h2>
+        <h5>Promoter and Legal Research</h5>
+      </div>
+      <div class="col-sm-4">
+        <img class="ProfileImgLight" src="images\photos\souravsuman.jpg" alt="">
+        <img class="ProfileImgDark" src="images\photos\souravsuman_bw.jpeg" alt="">
+        <h2>Sourav Suman</h2>
+        <h5>Market Research</h5>
+      </div>
+      <div class="col-sm-4">
+        <img class="ProfileImgLight" src="images\photos\rishikeshkumar.jpg" alt="">
+        <img class="ProfileImgDark" src="images\photos\rishikeshkumar_bw.jpeg" alt="">
+        <h2>Rishikesh Kumar</h2>
+        <h5>Website, App, Designing and Prototyping</h5>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Site footer -->
+
+    <footer class="site-footer HiddenContent" style="display: none;">
+        
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="instagram" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+            <hr>
+            <h6 style="font-size: 14px;"><a href="mailto:contact@capturlaw.com" id="contact-email"> contact@capturlaw.com</a> <br>Anupam Mandal - +91 98782 58376 <br> Sourav Suman - +91 98783 65273 </h6>
+            <h5 style="font-size: 12px;"> <br> Made by CapturLAW</h5>
+        
+    </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script>
+	  $(document).ready(function(){
+      $("#myModal").modal({backdrop: 'static', keyboard: false}) ;
+		  $("#myModal").modal('show');
+    });
+    function myFunction() {
+      var checkBox = document.getElementById("CookieCheckBox");
+      var text = document.getElementById("ProceedCookieBtn");
+      if (checkBox.checked == true){
+        text.style.display = "block";
+      } 
+      else {
+        text.style.display = "none";
+      }
+    }
+    $("#ProceedCookieBtn").click(function(){
+      $(".HiddenContent").show();
+    })
+  </script>
+  
+  <script type="text/javascript">
+    const chk = document.getElementById('chk');
+    chk.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+    const floating_btn = document.querySelector('.floating-btn');
+    const close_btn = document.querySelector('.close-btn');
+    const social_panel_container = document.querySelector('.social-panel-container');
+    floating_btn.addEventListener('click', () => {
+      social_panel_container.classList.toggle('visible');
+    });
+    close_btn.addEventListener('click', () => {
+      social_panel_container.classList.remove('visible');
+    });
+  </script>
+
+</body>
+</html>

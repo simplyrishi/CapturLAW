@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-fixed-top  ">
+  <a class="navbar-brand" href="../index.html">
+      <img  class="MyImage" alt="" style="height:100px;">
+    
+  </a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+              <div class="btn-toggler"  >
+  <input type="checkbox" class="checkbox" id="chk" />
+  <label class="label" for="chk">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <div class="ball"></div>
+  </label>
+</div>
+    </li>
+  </ul>
+</nav>
+
+
+
+<div class="LegalFormDiv">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd51hPrfhM48dso9R62YssTzphTJT3wYfpszoHCbuvp8XZZDg/viewform?embedded=true" id="Legal" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+
+<footer class="site-footer HiddenContent">
+        
+  <ul class="social-icons">
+    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+  </ul>
+  <hr>
+  <h6 style="font-size: 14px;"><a href="mailto:contact@capturlaw.com" id="contact-email"> contact@capturlaw.com</a> <br>Anupam Mandal - +919878258376 <br> Sourav Suman - +919878365273 </h6>
+  <h5 style="font-size: 12px;"> <br> Made by CapturLAW</h5>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+  $(document).ready(function(){
+    $("#myModal").modal({backdrop: 'static', keyboard: false}) ;
+    $("#myModal").modal('show');
+  });
+  function myFunction() {
+    var checkBox = document.getElementById("CookieCheckBox");
+    var text = document.getElementById("ProceedCookieBtn");
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } 
+    else {
+      text.style.display = "none";
+    }
+  }
+  $("#ProceedCookieBtn").click(function(){
+    $(".HiddenContent").show();
+  })
+</script>
+
+<script type="text/javascript">
+  const chk = document.getElementById('chk');
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+  const floating_btn = document.querySelector('.floating-btn');
+  const close_btn = document.querySelector('.close-btn');
+  const social_panel_container = document.querySelector('.social-panel-container');
+  floating_btn.addEventListener('click', () => {
+    social_panel_container.classList.toggle('visible');
+  });
+  close_btn.addEventListener('click', () => {
+    social_panel_container.classList.remove('visible');
+  });
+</script>
+
+</body>
+</html>
